@@ -4,7 +4,7 @@ This test is intended to test your technical competency whilst giving you freedo
 
 This test should take no longer than a few hours, please try not to take any longer than that. Your work will be assessed with this time limit in mind.
 
-Once you have completed the technical test, please provide a repository link to the project on GitHub/Bitbucket/your preferred provider. Alternatively you can provide a password protected .zip file of your completed test, secured with the same password you were provided with for the original .zip. Please send this to your recruitment contact.
+Once you have completed the technical test, please provide a repository link to the project on GitHub/Bitbucket/your preferred provider. Alternatively you can provide a  .zip file of your completed test. Please send this to your recruitment contact.
 
 ## Setup
 
