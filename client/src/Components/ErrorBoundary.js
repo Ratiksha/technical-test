@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+
+class ErrorBoundary extends Component {
+    state = {
+        hasError: false,
+    };
+
+    static getDerivedStateFromError() {
+        return {hasError: true};
+    }
+
+    componentDidCatch(error, errorInfo) {
+    }
+
+    render() {
+        if (this.state.hasError) {
+            return (
+                <h1>Something went wrong from our end. Our engineers are on it...</h1>
+            );
+        }
+
+        return this.props.children;
+    }
+}
+
+export default ErrorBoundary;

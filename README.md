@@ -62,3 +62,23 @@ The above requirements regarding Client & Web Server are the minimum we expect. 
 - State management
 - Deleting personnel (without mutating the original `json` file)
 - How would you do this differently if you have 10k personnel? 100k? 10m?
+
+
+## Assignment
+
+- I have implemented the code to display the table list of users information. Initially i did it with pure react.  Later i implemneted redux to demo the global state management. I have used react-table and bootstrap library for styling purpose.
+- I have added code on the server side to fetch the json data. This is my first time i have integrated a backend api call in node js.
+- I have added search functionality from the frontend. Found little difficult on the backend functionality. Could not complete it due to time constrain.
+- Sorting: I have used react-table sort functionality.
+- Error handling: I have used Error Boundry concept of react to show faalback ui to the users in case any errors encountered.
+- State management: I have Redux to store the list of users. So that the data can be used globally across the project. I have creater components, actions, reducers and a store. On the table component, once the component is mounted, api call is made to fetch the users list. This list is than stored in redux state by dispatching an action, which than calls a reducer to store the state comparing the initial state and action performed.
+- For a table having 100k to 10m list, I would be using a pagination concept to send data in chunks. We can introduce a skip key which would tel the backend from from poitn to pick up the data set
+example: {
+    skip: 0, // To get first 10 set of data
+}
+
+{
+    skip: 10, // To get second 10 set of data and so on
+}
+
+
